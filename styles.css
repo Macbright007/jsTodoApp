@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Ysabeau+Office:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Cabin", sans-serif; */
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+header {
+  background-color: #1f1f35;
+  padding: 1rem;
+  height: 150px;
+  border-bottom-right-radius: 3rem;
+}
+
+nav {
+  /* border: 2px solid white; */
+  width: 100%;
+  max-width: 900px;
+  margin: 0.8rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+}
+.Imagelogo {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+}
+.imgCont {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  /* background-color: red; */
+}
+.imgCont img {
+  width: 100%;
+  height: 100%;
+}
+.Imagelogo p {
+  color: #1f1f35;
+  font-weight: 800;
+  width: 200px;
+}
+
+/* styling for main */
+
+main {
+  height: calc(100vh - 150px);
+  /* box-sizing: border-box; */
+  background: #fff;
+  border: 2px solid;
+  border-top-left-radius: 3rem;
+  padding-top: 2rem;
+}
+
+.container {
+  margin-top: 4rem;
+  /* border: 2px solid red; */
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: 800;
+  color: #1f1f35;
+}
+
+.todos {
+  width: 100%;
+  max-width: 900px;
+  margin: 0.3rem auto;
+  /* border: 2px solid; */
+}
+.todoOptions {
+  display: flex;
+  justify-content: center; 
+}
+
+.todoOptions a {
+  text-decoration: none;
+  color: #1f1f35;
+  padding-left: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  border: 1px solid #1f1f35;
+  border-left: none;
+  border-right: none;
+}
+
+.todoBoard{
+    padding: 2rem;
+    height: 45vh;
+    /* border: 2px solid; */
+    overflow-y: scroll;
+}
+.board_img{
+  width: 50px;
+  margin: auto;
+}
+
+.board_img img{
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  background-color:#1f1f35 !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 241, 249) !important;
+}
+.todoContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    /* border: 2px solid; */
+}
+.todo{
+    display: flex;
+}
+.todo p{
+  color: #1f1f35;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.edit i{
+  font-size: 22px;
+}
+.edit i:first-child{
+  color: blue;
+  margin-right: 10px;
+}
+.edit i:last-child{
+  color: red;
+}
+span{
+    font-size: .8em;
+    margin-left: 20px;
+    font-weight: 900;
+    /* border: 2px solid; */
+}
+
+.add{
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  left: 30%;
+  z-index: 1;
+  width: 600px;
+  /* border: 2px solid; */
+}
+.add i{
+  font-size: 37px;
+  color: #1f1f35;
+}
+
+.addContent{
+  display: flex;
+  width: 100%;
+}
+
+.addContent button{
+   color: #fff;
+   background-color: #1f1f35;
+   width: 120px;
+   padding: .5em;
+   font-size: 18px;
+   font-weight: 900;
+   border-radius: 4rem 3rem;
+}
+
+#inputField[type='text']{
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid #1f1f35;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 18px;
+  padding-left: 1rem;
+}
+
+#inputField[type='text']::placeholder{
+  font-size: 18px;
+  color: #1f1f35;
+}
+
+.message {
+  color: #888;
+  /* border: 2px solid; */
+  font-size: 1.2rem;
+  width: 500px;
+  margin: auto;
+}
+
+/* .remove-button {
+  float: right;
+} */
+
+.todo input:checked ~ p {
+	text-decoration: line-through
+}

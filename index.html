@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo |App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <i class="fa fa-bars icons" aria-hidden="true"></i>
+        <i class="fa fa-bell-o icons" aria-hidden="true"></i>
+      </nav>
+
+      <div class="Imagelogo">
+        <div class="imgCont">
+          <img src="./images/icons8.png" alt="pic" />
+        </div>
+        <p>Hi!, below is my Todos</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h2>Tasks</h2>
+        <div class="todos">
+          <div class="todoOptions">
+            <a href="#">All Todos</a>
+            <a href="#">Completed Todos</a>
+            <!-- <a href="#">Postponed Todos</a> -->
+          </div>
+
+          <div class="todoBoard">
+            <div class="board_img">
+              <img src="./images/empty.png" alt="pis">
+            </div>
+            <p class="message">
+              There are no Todos to preview. please click the icon below to add
+              a new Todo
+            </p>
+
+            <p class="emptyTodo"></p>
+          </div>
+        </div>
+
+        <div class="add">
+          <form class="addContent">
+            <button class="btn" onclick="getTodo()">add</button>
+            <input
+              type="text"
+              id="inputField"
+              placeholder="please enter todo..."
+            />
+          </form>
+          <i class="fa fa-plus-circle" aria-hidden="true" id="inputIcon"></i>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
